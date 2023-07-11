@@ -1,6 +1,6 @@
 .home-page {
   .text-zone {
-    position: absolute;
+    position: relative;
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
@@ -10,8 +10,8 @@
 
   h1 {
     color: #fff;
-    font-size: 56px;
-    line-height: 53px;
+    font-size: 36px;
+    line-height: 36px;
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
@@ -80,15 +80,7 @@
   }
 }
 
-
-
 @media screen and (max-width: 1200px) {
-  .tags,
-  .home-page h1:before,
-  .home-page h1:after {
-    display: none;
-  }
-
   .home-page .text-zone {
     position: initial;
     width: 100%;
@@ -122,6 +114,14 @@
     bottom: auto;
     left: 0;
     margin: auto;
+  }
+
+  .info-bg {
+    display: none;
+  }
+  
+  .profile-image {
+    animation: none;
   }
 }
 
@@ -166,5 +166,28 @@
 
   100% {
     border-radius: 80% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-page .text-zone {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h2 {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .flat-button {
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding: 8px 14px;
+    margin-top: 20px;
   }
 }
